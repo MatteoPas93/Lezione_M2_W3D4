@@ -11,11 +11,14 @@ cambioTitolo();
 
 // Esercizio 8
 
-const coloreBody = function () {
+const colorBody = function () {
   let color = document.querySelector("body");
-  color = document.body.style.backgroundColor = `rgb(114,250,250)`;
+  // color = document.body.style.backgroundColor = `rgb(114,250,250)`;
+  color = document.body.style.backgroundColor = `rgb(${Math.round(
+    Math.random() * 255
+  )},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)}`;
 };
-coloreBody();
+colorBody();
 
 // Esercizio 9
 
@@ -38,29 +41,12 @@ const addClass = function () {
 
 // Esercizio 11
 
-// function visibility () {
-//     const img = querySelectorAll("img")
-//     for (let i = 0; i < img.length; i++)  {
-//         img[i].classList.toggle("Hidden")
-//     }      
-    
-//     }
-
-let allImg = document.querySelectorAll("img");
-const toggleImg = function () {
-  for (let i = 0; i < allImg.length; i++) {
-    let oneImg = allImg[i];
-    oneImg.onclick = deleteImg;
+function visibility() {
+  const img = document.querySelectorAll("img");
+  for (let i = 0; i < img.length; i++) {
+    img[i].classList.toggle("hidden");
   }
-};
-const deleteImg = function () {
-  for (let i = 0; i < allImg.length; i++) {
-    let oneImg = allImg[i];
-    oneImg.classList.add("visibilità-invisibilità");
-  }
-};
-
-toggleImg();
+}
 
 // Esercizio 12
 

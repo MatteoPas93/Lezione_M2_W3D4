@@ -10,12 +10,10 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  
 }
 
 .contenitoreOggetti img {
   margin-block: 10px;
-  
 }
 
 h4,
@@ -24,9 +22,16 @@ h6 {
   margin-bottom: 5px;
 }
 .commento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 20%;
   margin-top: 10%;
+}
+.commento h4 {
+  margin-inline: 10px;
 }
 
 footer {
@@ -34,5 +39,10 @@ footer {
   background-color: rgb(114, 224, 246);
 }
 
+.hidden {
+  display: none;
+}
 
-
+.card h3 {
+  margin-top: 1px;
+}

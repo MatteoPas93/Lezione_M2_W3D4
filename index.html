@@ -6,17 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- <script> document.bgColor = "green" </script> -->
-
+  <body onclick="colorBody()">
     <div class="titolo">
       <h1>Smartphones4Ever Shop!!!</h1>
     </div>
 
     <div class="contenitoreOggetti">
       <!-- primo oggetto -->
-      <div>
-        <img class = "visibility" src="./assets/prodotto-1.jpg" alt="Iphone 14" />
+      <div onclick="visibility()" class="card">
+        <img src="./assets/prodotto-1.jpg" alt="Iphone 14" />
         <h3>Iphone 14 (128Gb)</h3>
         <h6>
           Acquista Iphone 14, ideale per foto <br />
@@ -31,7 +29,7 @@
         </a>
       </div>
       <!-- secondo oggetto -->
-      <div>
+      <div onclick="visibility()" class="card">
         <img src="./assets/prodotto-2.jpg" alt="Samsung flip" />
         <h3>Samsung Z Flip (512Gb)</h3>
         <h6>
@@ -47,7 +45,7 @@
         </a>
       </div>
       <!-- terzo oggetto -->
-      <div>
+      <div onclick="visibility()" class="card">
         <img src="./assets/prodotto-3.jpg" alt="Huawei p30" />
         <h3>Huawei P30 (128Gb)</h3>
         <h6>
@@ -63,7 +61,7 @@
         </a>
       </div>
       <!-- quarto oggetto -->
-      <div>
+      <div onclick="visibility()" class="card">
         <img src="./assets/prodotto-4.jpg" alt="Iphone 15" />
         <h3>Iphone 15 (128Gb)</h3>
         <h6>
@@ -79,7 +77,7 @@
         </a>
       </div>
       <!-- quinto oggetto -->
-      <div>
+      <div onclick="visibility()" class="card">
         <img src="./assets/prodotto-5.jpg" alt="Samsung s22" />
         <h3>Samsung S22 (128Gb)</h3>
         <h6>
@@ -96,7 +94,7 @@
       </div>
     </div>
     <div class="commento">
-      <h5>Scrivi un commento sui nostri prodotti:</h5>
+      <h4>Scrivi un commento sui nostri prodotti:</h4>
       <input name="Commento" type="text" value="" size="50" />
       <button>Invia commento</button>
     </div>
